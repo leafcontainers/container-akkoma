@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
+# get Dockerfile
+wget https://akkoma.dev/AkkomaGang/akkoma/raw/branch/stable/Dockerfile
 
-git clone https://akkoma.dev/AkkomaGang/akkoma.git -b stable akkoma-stable
-
---build-arg UID=$(id -u) --build-arg GID=$(id -g) akkoma
---build-arg UID=$(id -u) --build-arg GID=$(id -g) akkoma-db
