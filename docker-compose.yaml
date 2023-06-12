@@ -6,7 +6,7 @@ services:
     restart: unless-stopped
     user: ${DOCKER_USER}
     container_name: akkoma-db
-    hostname: akkoma-ab
+    hostname: db
     environment: {
       # This might seem insecure but is usually not a problem.
       # You should leave this at the "akkoma" default.
